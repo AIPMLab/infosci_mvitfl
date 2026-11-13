@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools>=61", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "infosci-mvitfl"
+version = "0.1.0"
+description = "Core PyTorch implementation of Masked ViTFL for federated image classification."
+readme = "README.md"
+requires-python = ">=3.8"
+dependencies = [
+    "torch>=1.8.1",
+    "timm>=0.9",
+]
+keywords = [
+    "vision-transformer",
+    "federated-learning",
+    "image-classification",
+    "sparse-mask",
+]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
